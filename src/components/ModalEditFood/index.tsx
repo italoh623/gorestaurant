@@ -11,7 +11,7 @@ interface ModalEditFoodProps {
   isOpen: boolean;
   setIsOpen: () => void;
   handleUpdateFood: (data: FoodInterface) => void;
-  editingFood: () => void;
+  editingFood: FoodInterface;
 }
 
 const ModalEditFood = ({ 

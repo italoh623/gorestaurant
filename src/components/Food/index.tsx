@@ -6,7 +6,7 @@ import api from '../../services/api';
 import FoodInterface from '../../model/FoodInterface';
 
 interface FoodProps {
-  available: boolean;
+  available?: boolean;
   food: FoodInterface;
   handleEditFood: (food: FoodInterface) => void;
   handleDelete: (foodId: number) => void;
