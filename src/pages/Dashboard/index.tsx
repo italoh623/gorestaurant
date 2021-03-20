@@ -7,8 +7,9 @@ import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
 import FoodInterface from '../../model/FoodInterface';
+import React from 'react';
 
-const Dashboard = () => {
+const Dashboard: React.FC = () => {
   const [foods, setFoods] = useState<FoodInterface[]>([]);
   const [editingFood, setEditingFood] = useState<FoodInterface>({} as FoodInterface);
   const [modalOpen, setModalOpen] = useState(false);
